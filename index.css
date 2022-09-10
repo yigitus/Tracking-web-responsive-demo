@@ -1,0 +1,42 @@
+
+body {
+    background-color: rgb(19, 35, 53);
+}
+
+header {
+    display: flex;
+    max-height: 100px;
+    height: fit-content;
+    /* background-color: rgb(0, 16, 31); */
+    padding: 5px 25px;
+    align-items: center;
+}
+
+#logo {
+    padding-right: 100px;
+    max-height: 55px;
+    width: auto;
+}
+
+
+header > ul {
+    display: flex;
+    margin: 0;
+    padding: 25px 25px;
+    flex-direction: row;
+    list-style: none;
+    gap: 30px;
+}
+
+header > ul > li {
+    font-family: 'Inter', sans-serif;
+}
+
+header > ul > li > a {
+    text-decoration: none;
+    color: rgb(214, 213, 223);
+}
+
+header > ul > li > a:hover {
+    color: rgb(255, 255, 255);
+}
