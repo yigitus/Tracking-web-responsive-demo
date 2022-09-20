@@ -3,6 +3,13 @@ body {
     /* background: rgb(19,35,53); */
     /* background: rgb(19,35,53); */
     background: linear-gradient(90deg, rgba(3,3,11,1) 0%, rgba(11,11,23,1) 35%, rgba(11,11,23,1) 65%, rgba(3,3,11,1) 100%);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 header {
@@ -135,6 +142,7 @@ header > ul > li > a:hover {
     margin: 0 100px;
     display: flex;
     justify-content: space-between;
+    overflow-x: hidden;
 }
 
 #trusted-images{
@@ -210,4 +218,67 @@ span.material-symbols-outlined{
 #our-services div{
     display: flex;
     gap: 10%
+}
+
+#loop {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1075px) {
+    #content {  
+        flex-direction: column;
+    }
+
+    #content-left {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #content-left > img {
+        max-height: 100%;
+    }
+
+    #trusted-images {
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    #third-section {
+        flex-direction: column;
+    }
+    
+    #third-section-left {
+        width: 100%;
+    }
+
+    #third-section-right {
+        width: 100%;
+        padding: 0
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header{
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+    
+    #content {
+        padding: 10px 30px;
+    }
+
+    #content-left > h1  {
+        font-size: 1.5em;
+    }
+
+    #trusted {
+        margin: 0;
+    }
+
+    #trusted-images {
+        margin-left: 10px;
+        overflow-x: auto;
+    }
 }
