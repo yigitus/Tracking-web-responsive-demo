@@ -14,6 +14,36 @@ header {
     align-items: center;
 }
 
+p {
+    color: rgb(220, 219, 224);
+    font-family: 'Inter', sans-serif;
+}
+
+.primary-btn {
+    font-family: 'Inter', sans-serif;
+    color: black;
+    border-radius: 5px;
+    padding: 19px 27px;
+    background-color: rgb(220, 219, 224);
+    text-decoration: none;
+    width: fit-content;
+}
+
+.btn {
+    font-family: 'Inter', sans-serif;
+    color: rgb(220, 219, 224);
+    border: 2px solid #3f3f49;
+    border-radius: 5px;
+    padding: 17px 25px;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.btn:hover, .primary-btn:hover {
+    transition-duration: 100ms;
+    transform: translate(0, -8px);
+}
+
 #logo {
     flex: 1;
     max-height: 55px;
@@ -67,6 +97,7 @@ header > ul > li > a:hover {
 #content {
     display: flex;
     padding: 100px 100px;
+    padding-bottom: 100px;
 }
 
 #content > img {
@@ -95,4 +126,88 @@ header > ul > li > a:hover {
     color: #494952;
     font-size: 1.3em;
     font-weight: 200;
+}
+
+#trusted {
+    /* background-color: rgba(17, 17, 32, 0.295); */
+    padding: 40px 20px;
+    border-radius: 5px;
+    margin: 0 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#trusted-images{
+    display: flex;
+    gap: 45px;
+}
+
+#trusted > p {
+    font-weight: bold;
+}
+
+#third-section {
+    display: flex;
+    margin: 120px 100px;
+}
+
+#third-section h2{
+    color: rgb(220, 219, 224);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    margin-bottom: 35px;
+}
+
+#third-section h1{
+    margin: 20px 0 ;
+    color: rgb(220, 219, 224);
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5em;
+}
+
+#third-section-left {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+#third-section-left > img {
+    height: auto;
+    width: 80%;
+}
+
+#third-section-right{
+    padding: 0 25px;
+    width: 50%;
+    flex: 32;
+}
+
+#third-section-right p {
+    font-size: 1.2em;   
+}
+
+#third-section-right h2 {
+   color: rgb(255, 255, 255);
+   font-size: 1.4em;
+}
+
+#buttons {
+    display: flex;
+    gap: 20px;
+    padding: 50px 0;
+}
+
+span.material-symbols-outlined{
+    font-size: 4em;
+}
+
+#our-services {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#our-services div{
+    display: flex;
+    gap: 10%
 }

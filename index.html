@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WE CARE ABOUT YOUR SAFETY</title>
     <link rel="stylesheet" href="normalize.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Open+Sans&family=Oswald&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.css"></link>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style> .material-symbols-outlined { color:rgb(220, 219, 224); font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 48 } </style>
+    <script src="index.js"></script>
 </head>
 <body>
     <header>
@@ -29,9 +36,59 @@
             <div id="content-left">
                 <h1>We care about your safety. SafeteeInc never collects your data and does not sell it to any government.</h1>
                 <h2>If they dont pay well..</h2>
+                <div id="buttons">
+                    <a class="primary-btn" href="">Our services</a>
+                    <a class="btn" href="">Request demo</a>
+                </div>
+                
             </div>
             <img id="stats" src="./svg/stats.svg" alt="Pain">
         </div>
     </div>
+    <div id="second-section">
+        <div id="trusted">
+            <p>Trusted By</p>
+            <div id="trusted-images">
+                <img src="./png/1.png" class="trusted-img">
+                <img src="./png/2.png" class="trusted-img">
+                <img src="./png/3.png" class="trusted-img">
+                <img src="./png/4.png" class="trusted-img">
+            </div>
+        </div>
+    </div>
+    <div id="third-section">
+        
+        <div id="third-section-left">
+            <h2 data-aos="fade-right">And remember.. you are never alone</h2>
+            <img data-aos="fade-up" src="./png/man.png" alt="">
+        </div>
+        <div id="third-section-right">
+            <h1>TRUST US NOW!</h1>
+            <p>We know what we're doing. You can easily trust us.<br>Our professional staff takes care of all your personal data for you</p>
+            <h2>Check what we can do for you</h2>
+            <div id="our-services">
+                <div class="row">
+                    <span class="material-symbols-outlined"> home </span>
+                    <h2>Home automation</h2>
+                </div>
+                <div class="row">
+                    <span class="material-symbols-outlined"> bolt </span>
+                    <h2>Energy management</h2>
+                </div>
+                <div class="row">
+                    <span class="material-symbols-outlined"> support_agent </span>
+                    <h2>psychological counseling</h2>
+                </div>
+                <div class="row">
+                    <span class="material-symbols-outlined"> camera </span>
+                    <h2>24/7 monitoring</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
