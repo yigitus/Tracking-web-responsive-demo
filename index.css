@@ -166,6 +166,7 @@ header > ul > li > a:hover {
     margin-bottom: 35px;
 }
 
+
 #third-section h1{
     margin: 20px 0 ;
     color: rgb(220, 219, 224);
@@ -179,9 +180,16 @@ header > ul > li > a:hover {
     flex-direction: column;
 }
 
+#third-section-left {
+    text-align: center;
+}
+
+
 #third-section-left > img {
-    height: auto;
-    width: 80%;
+    height: 55%;
+    width: fit-content;
+    margin: auto;
+    margin-top: 0;
 }
 
 #third-section-right{
